@@ -1,0 +1,30 @@
+div.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+div.register {
+    background-color: #E9E5CD;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding: 1em;
+
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5em;
+
+    >h1 {
+        margin-bottom: 1em;
+    }
+
+    >p {
+        margin-top: 1em;
+    }
+
+    mat-form-field {
+        width: 80%;
+    }
+}

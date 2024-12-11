@@ -1,0 +1,26 @@
+<div class="toolbar">
+  <button mat-raised-button (click)="register()">Register</button>
+  <app-google-wrapper></app-google-wrapper>
+</div>
+
+<div class="login" [formGroup]="loginForm">
+  <h1>Login</h1>
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName="email">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput placeholder="Password" formControlName="password">
+    </mat-form-field>
+  </div>
+
+  <p>
+    <button mat-raised-button (click)="login()">Login</button>
+  </p>
+
+</div>
