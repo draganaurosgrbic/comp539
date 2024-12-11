@@ -1,0 +1,19 @@
+<h2 mat-dialog-title style="margin-bottom: 1em;">URL Info</h2>
+
+<mat-dialog-content>
+
+  <p><b>Short URL:</b> {{urlData.shortUrl}}</p>
+  <p><b>Long URL:</b> {{urlData.longUrl}}</p>
+  <p><b>Created At:</b> {{urlData.createdAt | date}}</p>
+  <p><b>Expire At:</b> {{urlData.expireAt | date}}</p>
+  <p><b>Click Count:</b> {{urlData.clickCount}}</p>
+  <p><b>User Agent:</b> {{urlData.userAgent | slice:0:50 }}</p>
+  <p><b>IP Address:</b> {{urlData.ipAddress}}</p>
+  <p><b>Geo Location:</b> {{urlData.geoLocation}}</p>
+
+</mat-dialog-content>
+
+<mat-dialog-actions style="display: flex; flex-direction: row; justify-content: space-between;">
+  <div></div>
+  <button mat-button cdkFocusInitial (click)="cancel()">Close</button>
+</mat-dialog-actions>
